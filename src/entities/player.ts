@@ -26,7 +26,7 @@ export class Player extends Entity {
         }
     };
     
-    constructor(scene: Phaser.Scene, x: number, y: number, texture: string, type?: string) {
+    constructor(scene: Phaser.Scene, x: number, y: number, texture: string, _type?: string) {
         super(scene, x, y, texture, SPRITES.PLAYER_STILL);  // Default to still animation
 
         const anims = this.scene.anims;

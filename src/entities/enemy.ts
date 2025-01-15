@@ -6,7 +6,6 @@ export class Enemy extends Entity {
     private isFollowing: boolean;
     private agroDistance: number;
     private attackRange: number;
-    private followRange: number;
     private isAlive: boolean;
     private moveSpeed: number;
     private initialPosition: { x: number; y: number; };
@@ -151,7 +150,7 @@ export class Enemy extends Entity {
         }
     }
 
-    private handleCollision(direction: Phaser.Physics.Arcade.Body) {
+    private handleCollision(_direction: Phaser.Physics.Arcade.Body) {
         const currentTime = this.scene.time.now;
         if (currentTime - this.lastBlockedTime < 500) return;
         

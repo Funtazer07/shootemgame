@@ -1,6 +1,6 @@
 export class Entity extends Phaser.Physics.Arcade.Sprite {
     health: number;
-    constructor(scene: Phaser.Scene, x: number, y: number, texture: string, type?: string) {
+    constructor(scene: Phaser.Scene, x: number, y: number, texture: string, _type?: string) {
         super(scene, x, y, texture)
 
         this.scene = scene;
